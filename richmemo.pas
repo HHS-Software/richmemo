@@ -196,7 +196,7 @@ type
     procedure SetHideSelection(AValue: Boolean);
     function GetContStyleLength(TextStart: Integer): Integer;
     
-    procedure SetSelText(const SelTextUTF8: string); override;
+    procedure SetSelText(const SelTextUTF8: string); //override;
     function GetZoomFactor: Double; virtual;
     procedure SetZoomFactor(AValue: Double); virtual;
     procedure SetTransparent(AValue: Boolean); virtual;
