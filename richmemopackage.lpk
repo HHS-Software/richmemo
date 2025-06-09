@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
-  <Package Version="4">
+  <Package Version="5">
     <PathDelim Value="\"/>
     <Name Value="richmemopackage"/>
-    <Author Value="Dmitry 'skalogryz' Boyarintsev"/>
+    <Author Value="Dmitry &apos;skalogryz&apos; Boyarintsev"/>
     <CompilerOptions>
       <Version Value="11"/>
       <PathDelim Value="\"/>
@@ -12,11 +12,6 @@
         <OtherUnitFiles Value="win32;carbon;gtk2;cocoa;qt;qt5"/>
         <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
-      <Parsing>
-        <SyntaxOptions>
-          <UseAnsiStrings Value="False"/>
-        </SyntaxOptions>
-      </Parsing>
       <Other>
         <CompilerMessages>
           <IgnoredMessages idx5060="True" idx5057="True" idx5024="True" idx4055="True"/>
@@ -106,6 +101,7 @@
         <UnitName Value="qt5richmemo"/>
       </Item16>
     </Files>
+    <CompatibilityMode Value="True"/>
     <RequiredPkgs Count="2">
       <Item1>
         <PackageName Value="LCL"/>
