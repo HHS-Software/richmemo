@@ -207,15 +207,11 @@ begin
   ColorRefToTQColor(Params.Color, clr);
   QTextEdit_setTextColor(w, @clr);
 
-  //todo:
-  {
-  if not Params.HasBkClr then begin
-    ColorRefToTQColor(Params.BkColor, clr);
-    clr.Alpha:=0;
-  end else
-    ColorRefToTQColor(Params.BkColor, clr);
-  QTextEdit_setTextBackgroundColor(w, @clr);
-  }
+  if Params.HasBkClr then
+    begin
+      ColorRefToTQColor(Params.BkColor, clr);
+      QTextEdit_setTextBackgroundColor(w, @clr);
+    end;
 
   te.setSelection(ss, sl);
 end;
